@@ -4,7 +4,6 @@ pipeline:
     commands:
       - go get
       - go build
-      - go test
 
   frontend:
     image: node:6
