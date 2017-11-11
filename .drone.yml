@@ -6,7 +6,7 @@ pipeline:
       - go test
   frontend:
     image: node
-    commands:
+    commands :
       - npm install
       - npm run test
       - npm run build
