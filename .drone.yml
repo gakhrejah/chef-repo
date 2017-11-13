@@ -1,6 +1,6 @@
 workspace:
   base: /go
-  path: /clone/chef-repo
+  path: /clone/chef-repo/
 pipeline:
   s3:
     image: plugins/s3
@@ -8,4 +8,4 @@ pipeline:
     access_key: AKIAIG2P2F6RYOEOR27Q
     secret_key: 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
     source: /clone/chef-repo/name.txt
-    target: s3://my-first-drone-pipeline/files
+    target: my-first-drone-pipeline/files/
