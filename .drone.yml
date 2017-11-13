@@ -1,7 +1,8 @@
 pipeline:
-  build:
-    image: node:latest
-    commands: npm install
-  test:
-    image: node:latest
-    commands: npm run test
+  s3:
+    image: plugins/s3
+    bucket: my-first-drone-pipeline
+    access_key: AKIAIG2P2F6RYOEOR27Q
+    secret_key: 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
+    source: $(pwd)/name.txt
+    target: my-first-drone-pipeline/files
