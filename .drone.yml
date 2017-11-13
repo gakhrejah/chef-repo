@@ -9,4 +9,4 @@ pipeline:
     secret_key: l2BE1Fikao6hhXBgiMkWv3ZZ435alwhuWJ+8WLf6
     source: name.txt
     target: /my-first-drone-pipeline/files/
-    region: us-east-2a
+    region: us-east-2
