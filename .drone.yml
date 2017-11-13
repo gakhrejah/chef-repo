@@ -1,6 +1,6 @@
 workspace:
   base: /go
-  path: src/github.com/clone/chef-repo
+  path: /clone/chef-repo
 pipeline:
   s3:
     image: plugins/s3
