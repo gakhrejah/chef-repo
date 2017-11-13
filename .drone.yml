@@ -5,8 +5,9 @@ pipeline:
   s3:
     image: plugins/s3
     bucket: my-first-drone-pipeline
-    access_key: $AWS_ACCESS_KEY_ID
-    secret_key: $AWS_SECRET_ACCESS_KEY
+    #access_key: $AWS_ACCESS_KEY_ID
+    #secret_key: $AWS_SECRET_ACCESS_KEY
+    secrets: [AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY]
     source: name.txt
     target: /my-first-drone-pipeline/files/
     region: us-east-2
