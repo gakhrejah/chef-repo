@@ -1,7 +1,13 @@
+workspace:
+  base: /go
+  path: /clone/chef-repo/
 pipeline:
-  docker:
-    image: docker
-    commands:
-       - echo $AWS_ACCESS_KEY_ID
-       - echo $AWS_SECRET_ACCESS_KEY
-    secrets: [ aws_access_key_id , aws_secret_access_key ] 
+  s3:
+    image: plugins/s3
+    bucket: my-first-drone-pipeline
+    access_key: $AWS_ACCESS_KEY_ID
+    secret_key: $AWS_SECRET_ACCESS_KEY
+    secrets: [ aws_access_key_id, aws_secret_access_key ]
+    source: name.txt
+    target: /my-first-drone-pipeline/files/
+    region: us-east-2
