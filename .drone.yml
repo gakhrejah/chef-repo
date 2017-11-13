@@ -7,5 +7,5 @@ pipeline:
     bucket: my-first-drone-pipeline
     secrets: [ aws_access_key_id, aws_secret_access_key ]
     source: name.txt
-    target: /my-first-drone-pipeline/files/
+    target: 
     region: us-east-2
