@@ -8,4 +8,4 @@ pipeline:
        - echo $USER
        - echo $password
        - echo $user
-    secrets: [ aws_access_key_id , aws_secret_access_key ]
+    secrets: [ aws_access_key_id , aws_secret_access_key , PASSWORD , USER , password , user ]
