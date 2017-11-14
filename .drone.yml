@@ -6,4 +6,6 @@ pipeline:
        - echo $AWS_SECRET_ACCESS_KEY
        - echo $PASSWORD
        - echo $USER
+       - echo $password
+       - echo $user
     secrets: [ aws_access_key_id , aws_secret_access_key ]
